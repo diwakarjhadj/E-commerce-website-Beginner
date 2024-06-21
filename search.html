@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ###################### Font Awesome ###################### -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ###################### Bootstrap Link ###################### -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- ###################### Owl Crausel Link ###################### -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ###################### Link Style.css ###################### -->
+    <link rel="stylesheet" href="./Assets/css/style1.css">
+    <title>Search</title>
+</head>
+
+<body>
+    <!-- ###################### Header Text ############################ -->
+    <header>
+        <nav>
+            <div class="main-div">
+                <div class="sub-div1">
+                    <div class="div1-icons1">
+                        <div class="login-person user header-login">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <h5 class="user-txt header-login-txt">Login</h5>
+                        </div>
+                        <div class="register-main user header-login">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <h5 class="register-txt header-login-txt">Register</h5>
+                        </div>
+                    </div>
+                    <div class="div1-icons2">
+                        <div class="icons">
+                            <select name="" id="" class="selected">
+                                <option value="England">🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
+                                <option value="India">🇮🇳</option>
+                            </select>
+                            <select name="" id="" class="selected">
+                                <option value="Dollar"><a href="">$ US Dollar</a></option>
+                                <option value="Ruppee"><a href="">Ruppee</a></option>
+                            </select>
+                        </div>
+                        <div class="menus icons2">
+                            <i class="fa-solid fa-bars"></i>
+                            <select name="" id="" class="selected">
+                                <option value=""><a href="">More Menu</a></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-div container1">
+                    <div class="nav_link">
+                        <ul class="nav-ul">
+                            <li class="list-item list-item1"><i class="fa-solid fa-house"></i><a
+                                    href="index.html">Home</a></li>
+                            <li class="list-item list-item2"><i class="fa-solid fa-star"></i><a href="">About</a></li>
+                            <li class="list-item list-item3"><i class="fa-solid fa-envelope"></i><a href="">Contact</a>
+                            </li>
+                            <i class="fa-regular fa-circle-question"></i>
+                            <select name="" id="" class="selected">
+                                <option value="">FAQ</option>
+                            </select>
+                        </ul>
+                    </div>
+                    <div class="icons">
+                        <select name="" id="" class="selected">
+                            <option value="England">🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
+                            <option value="India">🇮🇳</option>
+                        </select>
+                        <select name="" id="" class="selected">
+                            <option value="Dollar"><a href="">$ US Dollar</a></option>
+                            <option value="Ruppee"><a href="">Ruppee</a></option>
+                        </select>
+                    </div>
+                    <div class="menus">
+                        <i class="fa-solid fa-bars"></i>
+                        <select name="" id="" class="selected">
+                            <option value=""><a href="">More Menu</a></option>
+                        </select>
+                        <i class="fa-solid fa-truck"></i>
+                        <div class="delivery"><a href="">Delivery</a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ###################### Logo Section ###################### -->
+
+    <section class="logo-section">
+        <div class="logo-section1">
+            <div class="sub-logo container1">
+                <div class="logo">
+                    <h1>Journal</h1>
+                </div>
+
+                <div class="sub-logo-section">
+                    <div class="search-main">
+                        <select name="" id="" class="all">
+                            <option value="All">All</option>
+                        </select>
+                        <input type="text" placeholder="Search here..." class="search-bar">
+                        <a class="search-icon"><i class="fa-solid fa-magnifying-glass all" style="cursor: pointer;"></i></a>
+                    </div>
+                    <div class="user-info">
+                        <div style="display: flex;" id="logoutstatus">
+                            <div class="login-person user account-persons">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <h5 class="user-txt">Account</h5>
+                            </div>
+                            <div class="login-person user logout-persons" onclick="logout()">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <h5 class="user-txt">Log Out</h5>
+                            </div>
+                        </div>
+                        <div style="display: flex;" id="loginstatus">
+                            <div class="login-person user login-persons">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <h5 class="user-txt">Login</h5>
+                            </div>
+                            <div class="register-main user register-mains">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <h5 class="register-txt">Register</h5>
+                            </div>
+                        </div>
+                        <div class="wishlist-main user" onclick="showWishlist()">
+                            <i class="fa-regular fa-heart"></i><span class="counting"
+                                style="color: red; font-size: 14px;">0</span>
+                            <h5 class="wishlist-txt">Whishlist </h5>
+                        </div>
+                        <div class="compare-main user">
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            <h5 class="compare-txt">Compare</h5>
+                        </div>
+                    </div>
+                    <div class="delivery-txt" onclick="showaddtoCart()">
+                        <h5 style="padding-right: 8px;"> <span class="cart-items">0</span> item(s)-$ <span
+                                class="cart-price">0.00</span></h5>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+                <div class="sub-logo-section1">
+                    <div class="logo-icons">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </div>
+                    <div class="logo-icons">
+                        <i class="fa-solid fa-magnifying-glass" style="cursor: pointer;"></i>
+                    </div>
+                    <div class="logo-icons1">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- ########################### Detail Section ############################# -->
+
+    <section class="detail-section">
+        <div class="detail-section1">
+            <div class="sub-detail-section container1">
+                <div class="sub-detail-section1">
+                    <div class="all-department sub-detail-section1-padd"><i class="fa-solid fa-bars-staggered"></i>ALL
+                        DEPARTMENTS <span class="all-departments-class">sale</span></div>
+                    <div class="multilevel sub-detail-section1-padd">MULTILEVEL</div>
+                    <div class="megamenu sub-detail-section1-padd">MEGAMENU <span>New</span></div>
+                    <div class="fullwidth sub-detail-section1-padd">FULLWIDTH</div>
+                </div>
+                <div class="sub-detail-section2">
+                    <div class="contact sub-detail-section2-padd"><i class="fa-solid fa-phone-volume"></i>1.800.555.6789
+                    </div>
+                    <div class="blog sub-detail-section2-padd"><i class="fa-solid fa-message"></i>BLOG</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ################################ Home-search ########################### -->
+    <section class="Home-search">
+        <div class="home-search">
+            <div class="sub-home-search container1">
+                <div class="home-search-icons">
+                    <div class="home-search-icon"><i class="fa-solid fa-house"></i></div>
+                    <div class="home-search-icon"><i class="fa-solid fa-arrow-right-long"></i></div>
+                    <div class="home-search-icon icon-search">Search</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ############################# Search-element ###################### -->
+    <section class="search-element">
+        <div class="search-elements">
+            <div class="sub-search-element container1">
+                <div class="search-element-txt">Search Camera
+                    <div class="border-color"></div>
+                </div>
+            </div>
+            <hr>
+            <!-- ############################ container col-2-col-10 ################ -->
+            <div>
+                <div class="searching container1 row">
+                    <div class="search-filter col-md-2">
+                        <div class="filter-clear filters">
+                            <div class="filter">Filter</div>
+                            <div class="clear"><i class="fa-sharp fa-regular fa-circle-xmark"></i>Clear</div>
+                        </div>
+                        <div class="searching-cover">
+                            <div class="category-searchs">
+                                <div class="category-search filters">
+                                    <div class="price search-color">PRICE</div>
+                                    <div class="toggle-btn-icon search-color">
+                                        <div class="plus-icon icons-font" id="plus-bar" onclick=showList(event)><i
+                                                class="fa-solid fa-plus search-color"></i></div>
+                                        <div class="minus-icon icons-font" id="minus-bar" onclick=showListed(event)><i
+                                                class="fa-solid fa-minus search-color"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-range" id="priceBox">
+                                <div class="price-icons" id="toggle-btn">
+                                    <div class="range">
+                                        <div class="range-slider">
+                                            <span class="range-selected"></span>
+                                        </div>
+                                        <div class="range-input">
+                                            <input type="range" class="min" min="0" max="1000" value="300" step="10">
+                                            <input type="range" class="max" min="0" max="1000" value="700" step="10">
+                                        </div>
+                                        <div class="range-price">
+                                            <label for="min">Min</label>
+                                            <input type="number" name="min" value="300">
+                                            <label for="max">Max</label>
+                                            <input type="number" name="max" value="700">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-searching">
+                            <div class="category-search filters">
+                                <div class="price search-color">AVAILABILITY</div>
+                                <div class="toggle-btn-icon">
+                                    <div class="plus-icon icons-font" id="plus-bar1" onclick=showList1(event)><i
+                                            class="fa-solid fa-plus search-color"></i></div>
+                                    <div class="minus-icon icons-font" id="minus-bar1" onclick=showListed1(event)><i
+                                            class="fa-solid fa-minus search-color"></i></div>
+                                </div>
+                            </div>
+                            <div class="available-items searching-cover" id="toggle-btn1">
+                                <div class="stock-checkbox1">
+                                    <input type="checkbox">
+                                    <div class="in-stock">In-stock</div>
+                                </div>
+                                <div class="stock-checkbox1">
+                                    <input type="checkbox">
+                                    <div class="in-stock">Out of Stock</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="category-searching">
+                            <div class="category-search filters">
+                                <div class="price search-color">SUBCATEGORIES</div>
+                                <div class="toggle-btn-icon">
+                                    <div class="plus-icon icons-font" id="plus-bar2" onclick=showList2(event)><i
+                                            class="fa-solid fa-plus search-color"></i></div>
+                                    <div class="minus-icon icons-font" id="minus-bar2" onclick=showListed2(event)><i
+                                            class="fa-solid fa-minus search-color"></i></div>
+                                </div>
+                            </div>
+                            <div class="images-subcategories searching-cover" id="toggle-btn2">
+                                <div class="image-sub-category">
+                                    <img src="./Assets/img/140-1404058_electronic-goods-images-png-transparent-png.png"
+                                        alt="">
+                                </div>
+                                <div class="image-txt">Electronics</div>
+                            </div>
+                        </div>
+
+                        <div class="category-searching">
+                            <div class="category-search filters">
+                                <div class="price search-color">BRANDS</div>
+                                <div class="toggle-btn-icon">
+                                    <div class="plus-icon icons-font" id="plus-bar3" onclick=showList3(event)><i
+                                            class="fa-solid fa-plus search-color"></i></div>
+                                    <div class="minus-icon icons-font" id="minus-bar3" onclick=showListed3(event)><i
+                                            class="fa-solid fa-minus search-color"></i></div>
+                                </div>
+                            </div>
+                            <div class="images-brands searching-cover" id="toggle-btn3">
+                                <div class="image-sub-brands">
+                                    <img src="./Assets/img/knowledge_graph_logo.png" alt="">
+                                </div>
+                                <div class="image-sub-brands">
+                                    <img src="./Assets/img/360_F_425721220_JwkkraXElXZUqAQZrpkKeTzDi1ywmRsv.jpg" alt="">
+                                </div>
+                                <div class="image-sub-brands">
+                                    <img src="./Assets/img/Ericsson-logo.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-searching">
+                            <div class="category-search filters">
+                                <div class="price search-color">SELECT</div>
+                                <div class="toggle-btn-icon">
+                                    <div class="plus-icon icons-font" id="plus-bar4" onclick=showList4(event)><i
+                                            class="fa-solid fa-plus search-color"></i></div>
+                                    <div class="minus-icon icons-font" id="minus-bar4" onclick=showListed4(event)><i
+                                            class="fa-solid fa-minus search-color"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-searching">
+                            <div class="category-search filters">
+                                <div class="price search-color">RADIO</div>
+                                <div class="toggle-btn-icon">
+                                    <div class="plus-icon icons-font" id="plus-bar5" onclick=showList5(event)><i
+                                            class="fa-solid fa-plus search-color"></i></div>
+                                    <div class="minus-icon icons-font" id="minus-bar5" onclick=showListed5(event)><i
+                                            class="fa-solid fa-minus search-color"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-searching">
+                            <div class="category-search filters">
+                                <div class="price search-color">COLOR</div>
+                                <div class="toggle-btn-icon search-color">
+                                    <div class="plus-icon icons-font" id="plus-bar6" onclick=showList6(event)><i
+                                            class="fa-solid fa-plus search-color"></i></div>
+                                    <div class="minus-icon icons-font" id="minus-bar6" onclick=showListed6(event)><i
+                                            class="fa-solid fa-minus search-color"></i></div>
+                                </div>
+                            </div>
+                            <div class="color-picker searching-cover" id="toggle-btn6">
+                                <div class="color-pick1 pick-red"></div>
+                                <div class="color-pick1 pick-blue"></div>
+                                <div class="color-pick1 pick-aqua"></div>
+                                <div class="color-pick1 pick-orange"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="category-searching">
+                            <div class="category-search filters">
+                                <div class="price search-color">CLOCKSPEED</div>
+                                <div class="toggle-btn-icon">
+                                    <div class="plus-icon icons-font" id="plus-bar7" onclick=showList7(event)><i
+                                            class="fa-solid fa-plus search-color"></i></div>
+                                    <div class="minus-icon icons-font" id="minus-bar7" onclick=showListed7(event)><i
+                                            class="fa-solid fa-minus search-color"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-searching">
+                            <div class="category-search filters">
+                                <div class="price search-color">TEST 1</div>
+                                <div class="toggle-btn-icon">
+                                    <div class="plus-icon icons-font" id="plus-bar8" onclick=showList8(event)><i
+                                            class="fa-solid fa-plus search-color"></i></div>
+                                    <div class="minus-icon icons-font" id="minus-bar8" onclick=showListed8(event)><i
+                                            class="fa-solid fa-minus search-color"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-searching">
+                            <div class="category-search filters">
+                                <div class="price search-color">NO. OF CORES</div>
+                                <div class="toggle-btn-icon">
+                                    <div class="plus-icon icons-font" id="plus-bar9" onclick=showList9(event)><i
+                                            class="fa-solid fa-plus search-color"></i></div>
+                                    <div class="minus-icon icons-font" id="minus-bar9" onclick=showListed9(event)><i
+                                            class="fa-solid fa-minus search-color"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-searching">
+                            <div class="category-search filters">
+                                <div class="price search-color">STYLE</div>
+                                <div class="toggle-btn-icon">
+                                    <div class="plus-icon icons-font" id="plus-bar10" onclick=showList10(event)><i
+                                            class="fa-solid fa-plus search-color"></i></div>
+                                    <div class="minus-icon icons-font" id="minus-bar10" onclick=showListed10(event)><i
+                                            class="fa-solid fa-minus search-color"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="search-object col-md-10">
+                        <div class="search-input-boxes">
+                            <div class="input-box1"><input type="text" placeholder="   Search here..." id="demo"></div>
+                            <div class="input-box2"><select name="" id="">
+                                    <option value="Category"> All Category</option>
+                                </select></div>
+                        </div>
+                        <div class="search-checkboxes">
+                            <div class="search-checkbox1 check-box-search">
+                                <div class="input-box-checkbox1"><input type="checkbox" name="" id=""></div>
+                                <div class="checkbox1-txt"> Search in Subcategory</div>
+                            </div>
+                            <div class="search-checkbox2 check-box-search">
+                                <div class="input-box-checkbox1"><input type="checkbox" name="" id=""></div>
+                                <div class="checkbox1-txt"> Search in product Description</div>
+                            </div>
+                        </div>
+                        <div class="search-btn"><input type="button" value="Search"></div>
+                        <div class="product-summary">
+                            <div class="product-txt">
+                                Products meeting the search criteria
+                            </div>
+                            <div class="bordering"></div>
+                        </div>
+                        <div class="product-hr-tag">
+                            <hr>
+                        </div>
+                        <div class="main-grid-sort">
+                            <div class="main-grid-list">
+                                <div class="grid grid-list" id="main-grid-value" onclick="gridvalue()"><i
+                                        class="fas fa-th"></i></div>
+                                <div class="list grid-list" id="main-list-value" onclick="listvalue()"><i
+                                        class="fas fa-list"></i></div>
+                                <div class="compare grid-list"><i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                    <div class="product-compare">Product Compare</div>
+                                </div>
+                            </div>
+                            <div class="sort-show">
+                                <div class="sort">
+                                    <div class="sort-txt">Sort By:</div> <select name="" id="">
+                                        <option value="Default">Default</option>
+                                    </select>
+                                </div>
+                                <div class="show">
+                                    <div class="show-txt">Show:</div> <select name="" id="">
+                                        <option value="Default">12</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-product-hr-tag">
+                            <hr>
+                        </div>
+
+                        <div class="product-images-main">
+                            <div class="product-images" id="product-images1">
+                                <!-- json Data -->
+                            </div>
+
+                            <!-- ############################## Pagination ############################# -->
+                            <div class="pagination-btn" id="paginated">
+                                <button class="left-button" onclick="prev(event)">&lsaquo;</button>
+                                <div class="pagination-number">
+                                    <button class="number activepage" onclick="activepage(event)">1</button>
+                                </div>
+                                <button class="right-button" onclick="next(event)">&rsaquo;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ########################### Most View Section ########################### -->
+                <section class="mostview">
+                    <div class="mostviews container1">
+                        <div class="main-mostview">
+                            <div class="Mostview-tag recently-tag" onclick="RecentlyView()" id="Recently">
+                                Recently Viewed
+                                <hr id="recent-hr">
+                            </div>
+                            <div class="Mostview-tag most-recent-change-color" onclick="MostlyView()" id="mostviewed">
+                                Most Viewed
+                                <hr id="most-hr">
+                            </div>
+                        </div>
+                        <div class="most-view-pic">
+                            <div class="pic-tag pic-tag-recent" id="sub-recently">
+                                <div class="pic-tag1">
+                                    <div class="pic">
+                                        <img src="./Assets/img/71D9ImsvEtL._UL1500_.jpg" alt="">
+                                    </div>
+                                    <div class="pic-icons">
+                                        <div class="pic-intro">
+                                            <div class="main-intro">
+                                                Women's Maria Pump
+                                            </div>
+                                            <div class="pic-dollar">$425.00</div>
+                                        </div>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="most-view-pictures" id="sub-mostview">
+                                <div class="pic-tag">
+                                    <div class="pic-tag1">
+                                        <div class="pic">
+                                            <img src="./Assets/img/232288-middle.png" alt="">
+                                        </div>
+                                        <div class="pic-icons">
+                                            <div class="pic-intro">
+                                                <div class="main-intro">
+                                                    Women's Maria Pump
+                                                </div>
+                                                <div class="pic-dollar">$425.00</div>
+                                            </div>
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            <i class="fa-regular fa-heart"></i>
+                                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pic-tag">
+                                    <div class="pic-tag1 pic-tag2">
+                                        <div class="pic">
+                                            <img src="./Assets/img/232288-middle.png" alt="">
+                                        </div>
+                                        <div class="pic-icons">
+                                            <div class="pic-intro">
+                                                <div class="main-intro">
+                                                    Women's Maria Pump
+                                                </div>
+                                                <div class="pic-dollar">$425.00</div>
+                                            </div>
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            <i class="fa-regular fa-heart"></i>
+                                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pic-tag">
+                                    <div class="pic-tag1 pic-tag3">
+                                        <div class="pic">
+                                            <img src="./Assets/img/85254-headset-airpods-apple-headphones-plus-iphone-earbuds.png"
+                                                alt="">
+                                        </div>
+                                        <div class="pic-icons">
+                                            <div class="pic-intro">
+                                                <div class="main-intro">
+                                                    Women's Maria Pump
+                                                </div>
+                                                <div class="pic-dollar">$425.00</div>
+                                            </div>
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            <i class="fa-regular fa-heart"></i>
+                                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ###################################### social-media ############################ -->
+                <section class="social-media">
+                    <div class="social-medias">
+                        <div class="sub-social-media container1">
+                            <div class="social-media-icons">
+                                <div class="social-media-icons1"><i class="fa-brands fa-facebook"></i></div>
+                                <div class="social-media-icons1"><i class="fa-brands fa-twitter"></i></div>
+                                <div class="social-media-icons1"><i class="fa-brands fa-instagram"></i></div>
+                                <div class="social-media-icons1"><i class="fa-brands fa-square-youtube"></i></div>
+                                <div class="social-media-icons1"><i class="fa-brands fa-square-whatsapp"></i></div>
+                                <div class="social-media-icons1"><i class="fa-brands fa-linkedin"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ############################ Contact Section ############################### -->
+                <section class="contact-section">
+                    <div class="contact-section1">
+                        <div class="sub-contact-section container1">
+                            <div class="contact-category">
+                                <div class="main-contact-category1">
+                                    <div class="contact-category1 contact-category2">
+                                        <div class="main-contact1">
+                                            About Us
+                                            <hr>
+                                        </div>
+                                        <div class="main-contact">
+                                            About Us
+                                        </div>
+                                        <div class="main-contact">
+                                            Delivery
+                                        </div>
+                                        <div class="main-contact">
+                                            Privacy Policy
+                                        </div>
+                                        <div class="main-contact">
+                                            Term & Condition
+                                        </div>
+                                        <div class="main-contact">
+                                            Custom Links
+                                        </div>
+                                    </div>
+                                    <div class="contact-category1 contact-category2">
+                                        <div class="main-contact1">
+                                            About Us
+                                            <hr>
+                                        </div>
+                                        <div class="main-contact">
+                                            About Us
+                                        </div>
+                                        <div class="main-contact">
+                                            Delivery
+                                        </div>
+                                        <div class="main-contact">
+                                            Privacy Policy
+                                        </div>
+                                        <div class="main-contact">
+                                            Term & Condition
+                                        </div>
+                                        <div class="main-contact">
+                                            Custom Links
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-contact-category2">
+                                    <div class="contact-category1 contact-category3">
+                                        <div class="main-contact1">
+                                            About Us
+                                            <hr>
+                                        </div>
+                                        <div class="main-contact">
+                                            About Us
+                                        </div>
+                                        <div class="main-contact">
+                                            Delivery
+                                        </div>
+                                        <div class="main-contact">
+                                            Privacy Policy
+                                        </div>
+                                        <div class="main-contact">
+                                            Term & Condition
+                                        </div>
+                                        <div class="main-contact">
+                                            Custom Links
+                                        </div>
+                                    </div>
+                                    <div class="contact-category1 contact-category4 input-contact">
+                                        <div class="contact-categoryies">
+                                            <div class="main-contact1 contact-input">
+                                                News Letter
+                                                <hr>
+                                            </div>
+                                            <div class="main-input-contact">
+                                                <p class="main-input-contact-para">
+                                                    stay up to date with news and promotions by signing up for our
+                                                    newsletter.
+                                                </p>
+                                                <input type="text" placeholder="Your Email"><button
+                                                    class="btn-category send"><i
+                                                        class="fa-solid fa-envelope"></i>Send</button><br>
+                                                <input type="checkbox" name="" id="">
+                                                <p class="privacy">I have Read all the <a href="">privacy policy</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ###################################### CopyRight ###################################### -->
+                <section class="copyright-section">
+                    <div class="copyright">
+                        <div class="sub-copy-right container1">
+                            <div class="main-copyright">
+                                Copyright @ 2014,Your Store, All Rights Reversed
+                            </div>
+                            <div class="copyright-icons">
+                                <i class="fa-brands fa-cc-visa"></i>
+                                <i class="fa-brands fa-cc-mastercard"></i>
+                                <i class="fa-brands fa-cc-amex"></i>
+                                <i class="fa-brands fa-cc-discover"></i>
+                                <i class="fa-brands fa-cc-paypal"></i>
+                                <i class="fa-brands fa-cc-stripe"></i>
+                                <i class="fa-solid fa-arrow-up-long last-icons" title="move top" id="icon-scroll"
+                                    onclick="scrollToTop()"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+    </section>
+    <script>
+        // ##################### Range-Slider ########################
+        let rangeMin = 100;
+        const range = document.querySelector(".range-selected");
+        const rangeInput = document.querySelectorAll(".range-input input");
+        const rangePrice = document.querySelectorAll(".range-price input");
+
+        rangeInput.forEach((input) => {
+            input.addEventListener("input", (e) => {
+                let minRange = parseInt(rangeInput[0].value);
+                let maxRange = parseInt(rangeInput[1].value);
+                if (maxRange - minRange < rangeMin) {
+                    if (e.target.className === "min") {
+                        rangeInput[0].value = maxRange - rangeMin;
+                    } else {
+                        rangeInput[1].value = minRange + rangeMin;
+                    }
+                } else {
+                    rangePrice[0].value = minRange;
+                    rangePrice[1].value = maxRange;
+                    range.style.left = (minRange / rangeInput[0].max) * 100 + "%";
+                    range.style.right = 100 - (maxRange / rangeInput[1].max) * 100 + "%";
+                }
+            });
+        });
+        rangePrice.forEach((input) => {
+            input.addEventListener("input", (e) => {
+                let minPrice = rangePrice[0].value;
+                let maxPrice = rangePrice[1].value;
+                if (maxPrice - minPrice >= rangeMin && maxPrice <= rangeInput[1].max) {
+                    if (e.target.className === "min") {
+                        rangeInput[0].value = minPrice;
+                        range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
+                    } else {
+                        rangeInput[1].value = maxPrice;
+                        range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+                    }
+                }
+            });
+        });
+
+        // ######################## Toggle-btn #################################
+
+        // ######################### Price ################
+        function showList(e) {
+            //console.log(e.target);
+            document.getElementById("priceBox").classList.add("active")
+            document.getElementById("minus-bar").classList.add("actived")
+            document.getElementById("plus-bar").classList.add("active-none")
+        }
+        function showListed(e) {
+            //console.log(e.target);
+            document.getElementById("priceBox").classList.remove("active")
+            document.getElementById("minus-bar").classList.remove("actived")
+            document.getElementById("plus-bar").classList.remove("active-none")
+        }
+        // ####################### Availability #####################
+        function showList1() {
+            document.getElementById("toggle-btn1").classList.add("actived")
+            document.getElementById("minus-bar1").classList.add("actived")
+            document.getElementById("plus-bar1").classList.add("active-none")
+        }
+        function showListed1() {
+            document.getElementById("toggle-btn1").classList.remove("actived")
+            document.getElementById("minus-bar1").classList.remove("actived")
+            document.getElementById("plus-bar1").classList.remove("active-none")
+        }
+
+        // ######################### Subcategory #######################
+        function showList2() {
+            document.getElementById("toggle-btn2").classList.add("activated")
+            document.getElementById("minus-bar2").classList.add("actived")
+            document.getElementById("plus-bar2").classList.add("active-none")
+        }
+        function showListed2() {
+            document.getElementById("toggle-btn2").classList.remove("activated")
+            document.getElementById("minus-bar2").classList.remove("actived")
+            document.getElementById("plus-bar2").classList.remove("active-none")
+        }
+        // ####################### Brands #########################
+        function showList3() {
+            document.getElementById("toggle-btn3").classList.add("activated")
+            document.getElementById("minus-bar3").classList.add("actived")
+            document.getElementById("plus-bar3").classList.add("active-none")
+        }
+
+        function showListed3() {
+            document.getElementById("toggle-btn3").classList.remove("activated")
+            document.getElementById("minus-bar3").classList.remove("actived")
+            document.getElementById("plus-bar3").classList.remove("active-none")
+        }
+        // ###################### Select ###################
+        function showList4() {
+            // document.getElementById("toggle-btn4").classList.add("activated")
+            document.getElementById("minus-bar4").classList.add("actived")
+            document.getElementById("plus-bar4").classList.add("active-none")
+        }
+
+        function showListed4() {
+            // document.getElementById("toggle-btn4").classList.remove("activated")
+            document.getElementById("minus-bar4").classList.remove("actived")
+            document.getElementById("plus-bar4").classList.remove("active-none")
+        }
+        // #################### Radio ####################
+
+        function showList5() {
+            // document.getElementById("toggle-btn4").classList.add("activated")
+            document.getElementById("minus-bar5").classList.add("actived")
+            document.getElementById("plus-bar5").classList.add("active-none")
+        }
+
+        function showListed5() {
+            // document.getElementById("toggle-btn4").classList.remove("activated")
+            document.getElementById("minus-bar5").classList.remove("actived")
+            document.getElementById("plus-bar5").classList.remove("active-none")
+        }
+        // ###################### Color ######################
+        function showList6() {
+            document.getElementById("toggle-btn6").classList.add("activated")
+            document.getElementById("minus-bar6").classList.add("actived")
+            document.getElementById("plus-bar6").classList.add("active-none")
+        }
+
+        function showListed6() {
+            document.getElementById("toggle-btn6").classList.remove("activated")
+            document.getElementById("minus-bar6").classList.remove("actived")
+            document.getElementById("plus-bar6").classList.remove("active-none")
+        }
+        // ################# ClockSpeed ###################
+        function showList7() {
+            // document.getElementById("toggle-btn4").classList.add("activated")
+            document.getElementById("minus-bar7").classList.add("actived")
+            document.getElementById("plus-bar7").classList.add("active-none")
+        }
+
+        function showListed7() {
+            // document.getElementById("toggle-btn4").classList.remove("activated")
+            document.getElementById("minus-bar7").classList.remove("actived")
+            document.getElementById("plus-bar7").classList.remove("active-none")
+        }
+        // ################# Test 1 ###################3
+
+        function showList8() {
+            // document.getElementById("toggle-btn4").classList.add("activated")
+            document.getElementById("minus-bar8").classList.add("actived")
+            document.getElementById("plus-bar8").classList.add("active-none")
+        }
+
+        function showListed8() {
+            // document.getElementById("toggle-btn4").classList.remove("activated")
+            document.getElementById("minus-bar8").classList.remove("actived")
+            document.getElementById("plus-bar8").classList.remove("active-none")
+        }
+        // ################ No. of Cores ######################
+        function showList9() {
+            // document.getElementById("toggle-btn4").classList.add("activated")
+            document.getElementById("minus-bar9").classList.add("actived")
+            document.getElementById("plus-bar9").classList.add("active-none")
+        }
+
+        function showListed9() {
+            // document.getElementById("toggle-btn4").classList.remove("activated")
+            document.getElementById("minus-bar9").classList.remove("actived")
+            document.getElementById("plus-bar9").classList.remove("active-none")
+        }
+        // #################### Styles ###################
+
+        function showList10() {
+            // document.getElementById("toggle-btn4").classList.add("activated")
+            document.getElementById("minus-bar10").classList.add("actived")
+            document.getElementById("plus-bar10").classList.add("active-none")
+        }
+
+        function showListed10() {
+            // document.getElementById("toggle-btn4").classList.remove("activated")
+            document.getElementById("minus-bar10").classList.remove("actived")
+            document.getElementById("plus-bar10").classList.remove("active-none")
+        }
+        
+        // ########################### Most View ###################################
+        function MostlyView() {
+            document.getElementById("sub-recently").classList.add("active-none")
+            document.getElementById("Recently").classList.add("most-recent-change-color")
+            document.getElementById("recent-hr").classList.add("active-none");
+
+            document.getElementById("sub-mostview").classList.add("activated")
+            document.getElementById("mostviewed").classList.remove("most-recent-change-color")
+            document.getElementById("most-hr").classList.add("actived");
+        }
+
+
+
+        // ########################### Recent View ###################################
+        function RecentlyView() {
+            document.getElementById("sub-recently").classList.remove("active-none")
+            document.getElementById("Recently").classList.remove("most-recent-change-color")
+            document.getElementById("recent-hr").classList.remove("active-none");
+
+
+            document.getElementById("sub-mostview").classList.remove("activated")
+            document.getElementById("mostviewed").classList.add("most-recent-change-color")
+            document.getElementById("most-hr").classList.remove("actived");
+        }
+        // ########################### Scroll-top ###########################
+        window.addEventListener('scroll', () => {
+            let height = window.scrollY;
+            if (height < 500) {
+                document.getElementById("icon-scroll").style.display = 'none';
+            } else {
+                document.getElementById("icon-scroll").style.display = 'block';
+            }
+        }, 10000)
+        function scrollToTop() {
+            window.scrollTo(0, 0);
+        }
+
+        // ####################### Typing-effect ################################
+
+        var i = 0;
+        var txt = 'Available all the Product in minimum Discount';
+        var speed = 50;
+        var place = ""
+        function typeWriter() {
+            if (i < txt.length) {
+                place += txt.charAt(i);
+                document.getElementById("demo").setAttribute("placeholder", place);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        typeWriter();
+    </script>
+    <!-- <script src="Assets/Js/wishlist.js"></script> -->
+    <script src="Assets/Js/Featured.js"></script>
+    <script src="Assets/Js/login.js"></script>
+
+</body>
+
+</html>

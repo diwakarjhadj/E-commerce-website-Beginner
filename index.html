@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ###################### Font Awesome ###################### -->
+    <script src="https://kit.fontawesome.com/94e9fcf317.js" crossorigin="anonymous"></script>
+    <!-- ###################### Bootstrap Link ###################### -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- ###################### Owl Crausel Link ###################### -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ###################### Link Style.css ###################### -->
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ###################### Header Text ############################ -->
+    <header>
+        <nav>
+            <div class="main-div">
+                <div class="sub-div1">
+                    <div class="div1-icons1">
+                        <div class="login-person user header-login">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <h5 class="user-txt header-login-txt"><a href="">Login</a> </h5>
+                        </div>
+                        <div class="register-main user header-login">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <h5 class="register-txt header-login-txt">Register</h5>
+                        </div>
+                    </div>
+                    <div class="div1-icons2">
+                        <div class="icons">
+                            <select name="" id="" class="selected">
+                                <option value="England">🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
+                                <option value="India">🇮🇳</option>
+                            </select>
+                            <select name="" id="" class="selected">
+                                <option value="Dollar"><a href="">$ US Dollar</a></option>
+                                <option value="Ruppee"><a href="">Ruppee</a></option>
+                            </select>
+                        </div>
+                        <div class="menus icons2">
+                            <i class="fa-solid fa-bars"></i>
+                            <select name="" id="" class="selected">
+                                <option value=""><a href="">More Menu</a></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-div container1">
+                    <div class="nav_link">
+                        <ul class="nav-ul">
+                            <li class="list-item list-item1"><i class="fa-solid fa-house"></i><a
+                                    href="index.html">Home</a></li>
+                            <li class="list-item list-item2"><i class="fa-solid fa-star"></i><a href="">About</a></li>
+                            <li class="list-item list-item3"><i class="fa-solid fa-envelope"></i><a href="">Contact</a>
+                            </li>
+                            <i class="fa-regular fa-circle-question"></i>
+                            <select name="" id="" class="selected">
+                                <option value="">FAQ</option>
+                            </select>
+                        </ul>
+                    </div>
+                    <div class="icons">
+                        <select name="" id="" class="selected">
+                            <option value="England">🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
+                            <option value="India">🇮🇳</option>
+                        </select>
+                        <select name="" id="" class="selected">
+                            <option value="Dollar"><a href="">$ US Dollar</a></option>
+                            <option value="Ruppee"><a href="">Ruppee</a></option>
+                        </select>
+                    </div>
+                    <div class="menus">
+                        <i class="fa-solid fa-bars"></i>
+                        <select name="" id="" class="selected">
+                            <option value=""><a href="">More Menu</a></option>
+                        </select>
+                        <i class="fa-solid fa-truck"></i>
+                        <div class="delivery"><a href="">Delivery</a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ###################### Logo Section ###################### -->
+
+    <section class="logo-section">
+        <div class="logo-section1">
+            <div class="sub-logo container1">
+                <div class="logo">
+                    <h1>Journal</h1>
+                </div>
+
+                <div class="sub-logo-section">
+                    <div class="search-main">
+                        <select name="" id="" class="all">
+                            <option value="All">All</option>
+                        </select>
+                        <input type="text" placeholder="Search here..." class="search-bar">
+                        <a class="search-icon"><i class="fa-solid fa-magnifying-glass all" style="cursor: pointer;"></i></a>
+                    </div>
+                    <div class="user-info">
+                        <div style="display: flex;" id="logoutstatus">
+                            <div class="login-person user account-persons">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <h5 class="user-txt">Account</h5>
+                            </div>
+                            <div class="login-person user logout-persons" onclick="logout()">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <h5 class="user-txt">Log Out</h5>
+                            </div>
+                        </div>
+                        <div style="display: flex;" id="loginstatus">
+                            <div class="login-person user login-persons">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <h5 class="user-txt">Login</h5>
+                            </div>
+                            <div class="register-main user register-mains">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <h5 class="register-txt">Register</h5>
+                            </div>
+                        </div>
+
+                        <div class="wishlist-main user" onclick="showWishlist()">
+                            <i class="fa-regular fa-heart"></i><span class="counting"
+                                style="color: red; font-size: 14px;">0</span>
+                            <h5 class="wishlist-txt">Whishlist </h5>
+                        </div>
+                        <div class="compare-main user">
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            <h5 class="compare-txt">Compare</h5>
+                        </div>
+                    </div>
+                    <div class="delivery-txt" onclick="showaddtoCart()">
+                        <h5 style="padding-right: 8px;"> <span class="cart-items">0</span> item(s)-$ <span
+                                class="cart-price">0.00</span></h5>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+                <div class="sub-logo-section1">
+                    <div class="logo-icons">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </div>
+                    <div class="logo-icons">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="logo-icons1">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+
+                <div class="hiding-section-3">
+                    <!-- ###################### login page ################### -->
+                    <div class="overlay-container">
+                        <div class="overlay"></div>
+                        <div class="loginform" id="login-page">
+                            <h4>SignIn</h4>
+                            <span class="cut">&times;</span>
+                            <form action="">
+                                <div>
+                                    <input type="text" placeholder="Email" id="username" />
+                                </div>
+                                <div>
+                                    <input type="password" placeholder="Password" id="password" />
+                                </div>
+                                <p>Create an account?<a onclick="show_closelogin()" style="color: brown; cursor: pointer;">Register</a></p>
+                                <button onclick="login()">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- ###################### Register page ################### -->
+                    <div class="overlay-container1">
+                        <div class="overlay1"></div>
+
+                        <div class="loginform1" id="register-page">
+                            <h4>Signup</h4>
+                            <span class="cutt">&times;</span>
+                            <form action="">
+                                <div>
+                                    <input type="text" placeholder="Email" id="email" />
+                                </div>
+                                <div>
+                                    <input type="password" placeholder="Password" id="pass" />
+                                </div>
+                                <div>
+                                    <input type="password" placeholder="Confirm Password" id="cpass" />
+                                </div>
+                                <p>Already have an account?<a onclick="show_closeregister()" style="color: brown; cursor: pointer;">Login</a></p>
+                                <button onclick="signup()">sign up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ########################### Detail Section ############################# -->
+
+    <section class="detail-section">
+        <div class="detail-section1">
+            <div class="sub-detail-section container1">
+                <div class="sub-detail-section1">
+                    <div class="all-department sub-detail-section1-padd" onmouseover="mouseOver(this)"
+                        onmouseout="mouseOut(this)"><i class="fa-solid fa-bars-staggered"></i>ALL
+                        DEPARTMENTS
+                        <span class="all-departments-class">sale</span>
+                        <div class="all-departments-box">
+                            <div class="short-category"> <i class="fa-brands fa-apple"></i> Short by Category</div>
+                            <div class="short-brands"> <i class="fa-solid fa-bars-staggered"></i>Short by brand</div>
+                            <div class="special-deals"> <i class="fa-light fa-percent"></i>Special Deals</div>
+                            <div class="bestsellers"> <i class="fa-solid fa-star"></i>BestSellers</div>
+                            <div class="custom-links"> <i class="fa-solid fa-chess-king"></i>Custom links</div>
+                            <div class="see-all-products"> <i class="fa-solid fa-shop"></i>See all products</div>
+                        </div>
+                    </div>
+                    <div class="multilevel sub-detail-section1-padd" onmouseover="mouseOver(this)"
+                        onmouseout="mouseOut(this)">MULTILEVEL
+                        <div class="multilevel-box">
+                            <div class="accessories">
+                                <div class="sub-accessories">Accessories<i class="fa-solid fa-caret-right"></i>
+                                    <div class="accessories-box">
+                                        <div class="accessories-main">Belts</div>
+                                        <div class="accessories-main">Shoes</div>
+                                        <div class="accessories-main">Sunglasses</div>
+                                        <div class="accessories-main">Camera</div>
+                                        <div class="accessories-main">Scarves</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Dressess"> Dressess </div>
+                            <div class="paints"> Paints</div>
+                            <div class="T-shirt"> T-shirt</div>
+                            <div class="tops"> Top</div>
+                        </div>
+                    </div>
+                    <div class="megamenu sub-detail-section1-padd" onmouseover="mouseOver(this)"
+                        onmouseout="mouseOut(this)">
+                        <div>MEGAMENU</div>
+                        <span>New</span>
+                        <div class="megamenu-box">
+                            <div class="megamenu-main-box">
+                                <div>
+                                    <h4>Top Categories</h4>
+                                </div>
+                                <div class="megamenu-list">
+                                    <div class="megamenu-main">
+                                        <div>Fashion</div>
+                                        <div>Bags </div>
+                                        <div>Health&Beauty</div>
+                                        <div>Footwear</div>
+                                        <div>Home Decor</div>
+                                        <div>Electronics</div>
+                                        <div>Food</div>
+                                        <div>Baby&Kid</div>
+                                        <div>Flower</div>
+                                        <div>Appliances</div>
+                                    </div>
+                                    <div class="megamenu-main">
+                                        <div>Fashion</div>
+                                        <div>Bags</div>
+                                        <div>Health&Beauty</div>
+                                        <div>Footwear</div>
+                                        <div>Home Decor</div>
+                                        <div>Electronics</div>
+                                        <div>Food</div>
+                                        <div>Baby&Kid</div>
+                                        <div>Flower</div>
+                                        <div>Appliances</div>
+                                    </div>
+                                    <div class="megamenu-main">
+                                        <div>Fashion</div>
+                                        <div>Bags</div>
+                                        <div>Health&Beauty</div>
+                                        <div>Footwear</div>
+                                        <div>Home Decor</div>
+                                        <div>Electronics</div>
+                                        <div>Food</div>
+                                        <div>Baby&Kid</div>
+                                        <div>Flower</div>
+                                        <div>Appliances</div>
+                                    </div>
+                                    <div class="megamenu-main">
+                                        <div>Fashion</div>
+                                        <div>Bags</div>
+                                        <div>Health&Beauty</div>
+                                        <div>Footwear</div>
+                                        <div>Home Decor</div>
+                                        <div>Electronics</div>
+                                        <div>Food</div>
+                                        <div>Baby&Kid</div>
+                                        <div>Flower</div>
+                                        <div>Appliances</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fullwidth sub-detail-section1-padd" onmouseover="mouseOver(this)"
+                        onmouseout="mouseOut(this)">FULLWIDTH
+                        <div class="fullwidth-box">
+                            <div class="fullwidth-main-box">
+                                <div>
+                                    <h4>Latest products</h4>
+                                </div>
+                                <div class="fullwidth-list">
+                                    <div class="fullwidth-main">
+                                        <div>Spectactles</div>
+                                        <div>Bags</div>
+                                        <div>Health&Beauty</div>
+                                        <div>Footwear</div>
+                                        <div>Home Decor</div>
+                                        <div>Electronics</div>
+                                        <div>Food</div>
+                                        <div>Baby&Kid</div>
+                                        <div>Flower</div>
+                                        <div>Appliances</div>
+                                    </div>
+                                    <div class="megamenu-main">
+                                        <div>Fashion</div>
+                                        <div>Bags</div>
+                                        <div>Health&Beauty</div>
+                                        <div>Footwear</div>
+                                        <div>Home Decor</div>
+                                        <div>Electronics</div>
+                                        <div>Food</div>
+                                        <div>Baby&Kid</div>
+                                        <div>Flower</div>
+                                        <div>Appliances</div>
+                                    </div>
+                                    <div class="megamenu-main">
+                                        <div>Fashion</div>
+                                        <div>Bags</div>
+                                        <div>Health&Beauty</div>
+                                        <div>Footwear</div>
+                                        <div>Home Decor</div>
+                                        <div>Electronics</div>
+                                        <div>Food</div>
+                                        <div>Baby&Kid</div>
+                                        <div>Flower</div>
+                                        <div>Appliances</div>
+                                    </div>
+                                    <div class="megamenu-main">
+                                        <div>Fashion</div>
+                                        <div>Bags</div>
+                                        <div>Health&Beauty</div>
+                                        <div>Footwear</div>
+                                        <div>Home Decor</div>
+                                        <div>Electronics</div>
+                                        <div>Food</div>
+                                        <div>Baby&Kid</div>
+                                        <div>Flower</div>
+                                        <div>Appliances</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlay-layer"></div>
+                </div>
+                <div class="sub-detail-section2">
+                    <div class="contact sub-detail-section2-padd"><i class="fa-solid fa-phone-volume"></i>1.800.555.6789
+                    </div>
+                    <div class="blog sub-detail-section2-padd"><i class="fa-solid fa-message"></i>BLOG</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ########################### Carousel-section ############################### -->
+    <section class="hero-section">
+        <div class="main-container container1">
+            <div class="row row-container">
+                <div class="col-md-8 carousel-section">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-item-section">
+                                    <img src="./Assets/img/Earbuds-PNG-Image-Background.png" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item-section">
+                                    <img src="./Assets/img/Earbuds-Wireless-PNG-Free-Download.png" class="d-block w-100"
+                                        alt="...">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item-section">
+                                    <img src="./Assets/img/85254-headset-airpods-apple-headphones-plus-iphone-earbuds.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-image-txt">
+                        <div class="mobile-btn"><button>Mobile</button></div>
+                        <div class="mobile-txt">Best Mobile solution at any resolution</div>
+                        <div class="learn-txt"><button>Learn More-></button> </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 carousel-image-section">
+                    <div class="image-part">
+                        <div class="image-part1">
+                            <img src="./Assets/img/Smartwatch-PNG-Image.png" alt="">
+                            <div class="carousel-image-text">
+                                <div class="image-desc">
+                                    <div class="link-tag"><a href="">Wearables</a></div>
+                                    <div class="link-desc">Intelligent & Durrable Design</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-part">
+                        <div class="image-part2">
+                            <img src="./Assets/img/watch-png-transparent-image-png-transparent-best-6.png" alt="">
+                            <div class="carousel-image-text2">
+                                <div class="image-desc1">
+                                    <div class="link-tag1"><a href="">Computer</a></div>
+                                    <div class="link-desc1">Build Your High powered</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ########################## shipping-section ################################## -->
+
+    <section class="shipping-section">
+        <div class="main-shipping">
+            <div class="sub-main-shipping container1">
+                <div class="sub-main-shipping1">
+                    <div class="free-shipping ships">
+                        <span class="shipping-font main-font"><i class="fa-sharp fa-solid fa-truck-fast"></i></span>
+                        <div class="shipping-txt-main">
+                            <div class="shippingtext">Free
+                                Shipping</div>
+                            <div class="shipping-txt">Free Delivery over $ 100</div>
+                        </div>
+                    </div>
+                    <div class="free-return ships">
+                        <span class="return-font main-font"><i class="fa-solid fa-share"></i></span>
+                        <div class="shipping-txt-main">
+                            <div class="shippingtext">Free Return</div>
+                            <div class="shipping-txt">Hassle Free Return</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-main-shipping2">
+                    <div class="secure-shopping ships">
+                        <span class="secure-font main-font"><i class="fa-regular fa-star-half-stroke"></i></span>
+                        <div class="shipping-txt-main">
+                            <div class="shippingtext">Secure Shopping</div>
+                            <div class="shipping-txt">Best Security Feature</div>
+                        </div>
+                    </div>
+                    <div class="unlimited-blocks ships">
+                        <span class="unlmmited-font main-font"><i class="fa-solid fa-cube"></i></span>
+                        <div class="shipping-txt-main">
+                            <div class="shippingtext">Unlimited Blocks</div>
+                            <div class="shipping-txt">Any content,Any Page</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ############################ Demand-section ########################## -->
+
+
+    <section class="demand-section">
+        <div class="demand-section1 container1">
+            <div class="sub-demand-section">
+                <div class="require">
+                    <h2 class="require-txt">
+                        Why buy from us?
+                    </h2>
+                    <hr>
+                </div>
+                <div class="require-main-txt">
+                    <p class="required-txt">Journal has been the best selling and Most loved OpenCart theme since first
+                        launch in 2013. Tried and Tested by over 20K people, Journal is the Best Opencart theme
+                        framework on the market today. <a href="">Learn More</a></p>
+                </div>
+            </div>
+            <div class="main-btn">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary actived" value="topcategories"
+                        onclick="showbutton(event)">Top Category
+                    </button>
+                    <button type="button" class="btn btn-secondary" value="Electronics"
+                        onclick="showbutton(event)">Electronics
+                    </button>
+                    <button type="button" class="btn btn-secondary" value="Beauty" onclick="showbutton(event)">Beauty
+                    </button>
+                    <button type="button" class="btn btn-secondary" value="Fashions" onclick="showbutton(event)">Fashion
+                    </button>
+                </div>
+            </div>
+
+            <div class="main-owl-crausel" id="main-carousel">
+                <!-- json data -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ############################# Feature-Section ############################### -->
+
+    <section class="demand-section Featured">
+        <div class="demand-section1 container1">
+            <div class="sub-demand-section">
+                <div class="require">
+                    <h2 class="require-txt">
+                        Featured Category
+                    </h2>
+                    <hr>
+                </div>
+                <div class="require-main-txt">
+                    <p class="required-txt">Journal has been the best selling and Most loved OpenCart theme since first
+                        launch in 2013. Tried and Tested by over 20K people, Journal is the Best Opencart theme
+                        framework on the market today.
+                </div>
+            </div>
+            <div class="main-btn">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary actived1"
+                        onclick="showbutton1(event)">Featured</button>
+                    <button type="button" class="btn btn-secondary" onclick="showbutton1(event)">Latest</button>
+                    <button type="button" class="btn btn-secondary" onclick="showbutton1(event)">BestSellers</button>
+                    <button type="button" class="btn btn-secondary" onclick="showbutton1(event)">Specials</button>
+                </div>
+            </div>
+
+            <div class="main-owl-crausel" id="main-carousel1">
+                <!-- json Data -->
+            </div>
+        </div>
+    </section>
+    <!-- ############################# Category-Section ################################## -->
+
+    <section class="demand-section Category">
+        <div class="demand-section1 container1">
+            <div class="sub-demand-section">
+                <div class="require">
+                    <h2 class="require-txt">
+                        Featured Section
+                    </h2>
+                    <hr>
+                </div>
+                <div class="require-main-txt">
+                    <p class="required-txt">Journal has been the best selling and Most loved OpenCart theme since first
+                        launch in 2013. Tried and Tested by over 20K people, Journal is the Best Opencart theme
+                        framework on the market today.
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-owl-crausel crausel-section-main">
+                <div class="new-fashion-img">
+                    <div class="require">
+                        <h2 class="require-txt category-section-heading">
+                            Fashion
+                        </h2>
+                        <hr class="fashion-hr">
+                    </div>
+                    <div class="category-fashion">
+                        <img src="./Assets/img/292-2927427_beautiful-woman-reading-a-book-woman-reading-a.png" alt="">
+                    </div>
+                    <div class="accessories f">Accessories</div>
+                    <div class="dressess f">Dressess</div>
+                    <div class="pants f">Pants</div>
+                    <div class="tshirts f">T-Shirts</div>
+                    <div class="see-all f"><a href="">see all in fashion</a></div>
+                </div>
+                <div class="new-Fashion">
+                    <div class="owl-carousel-main">
+                        <span class="require">
+                            <span class="require-txt category-section-heading1">
+                                New In Fashion
+                                <hr class="require-hr">
+                            </span>
+                        </span>
+                        <div id="owl-carousel-3" class="owl-carousel owl-theme">
+                            <div class="item items-category">
+                                <div class="carousel-imagesss">
+                                    <img src="./Assets/img/8-9-years-plus-buti-baby-gown-blue-fashion-dream-original-imafxu7rqutbdzvq-bb.webp"
+                                        alt="">
+                                    <div class="new">New</div>
+                                    <div class="hot">Hot</div>
+                                    <div class="days">2-3Days</div>
+                                </div>
+                                <div class="text-main-owl">
+                                    <div class="Bodycorn">Bodycorn Dress</div>
+                                    <div class="dollars">$999.00</div>
+                                    <hr>
+                                    <div class="btn-main">
+                                        <div class="btnmain"><button class="btn-category">Add To Cart </button></div>
+                                        <div class="iconscategory">
+                                            <i class="fa-regular fa-heart"></i>
+                                            <i class="fa-solid fa-right-left"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item items-category">
+                                <div class="carousel-imagesss">
+
+                                    <img src="./Assets/img/marlon-alves-A0mSSCEVh9A-unsplash.jpg" alt="">
+                                    <div class="new">New</div>
+                                    <div class="hot">Hot</div>
+                                </div>
+                                <div class="text-main-owl">
+                                    <div class="Bodycorn">Bodycorn Dress</div>
+                                    <div class="dollars">$999.00</div>
+                                    <hr>
+                                    <div class="btn-main">
+                                        <div class="btnmain"><button class="btn-category">Add To Cart </button></div>
+                                        <div class="iconscategory">
+                                            <i class="fa-regular fa-heart"></i>
+                                            <i class="fa-solid fa-right-left"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item items-category">
+                                <div class="carousel-imagesss">
+
+                                    <img src="./Assets/img/8-9-years-plus-buti-baby-gown-blue-fashion-dream-original-imafxu7rqutbdzvq-bb.webp"
+                                        alt="">
+                                    <div class="new">New</div>
+                                    <div class="hot">Hot</div>
+                                    <div class="days">2-3Days</div>
+                                </div>
+                                <div class="text-main-owl">
+                                    <div class="Bodycorn">Bodycorn Dress</div>
+                                    <div class="dollars">$999.00</div>
+                                    <hr>
+                                    <div class="btn-main">
+                                        <div class="btnmain"><button class="btn-category">Add To Cart </button></div>
+                                        <div class="iconscategory">
+                                            <i class="fa-regular fa-heart"></i>
+                                            <i class="fa-solid fa-right-left"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item items-category">
+                                <div class="carousel-imagesss">
+
+                                    <img src="./Assets/img/marlon-alves-A0mSSCEVh9A-unsplash.jpg" alt="">
+                                    <div class="new">New</div>
+                                    <div class="hot">Hot</div>
+                                </div>
+                                <div class="text-main-owl">
+                                    <div class="Bodycorn">Bodycorn Dress</div>
+                                    <div class="dollars">$999.00</div>
+                                    <hr>
+                                    <div class="btn-main">
+                                        <div class="btnmain"><button class="btn-category">Add To Cart </button></div>
+                                        <div class="iconscategory">
+                                            <i class="fa-regular fa-heart"></i>
+                                            <i class="fa-solid fa-right-left"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item items-category">
+                                <div class="carousel-imagesss">
+
+                                    <img src="./Assets/img/uriel-soberanes-MxVkWPiJALs-unsplash.jpg" alt="">
+                                    <div class="new">New</div>
+                                    <div class="hot">Hot</div>
+                                </div>
+                                <div class="text-main-owl">
+                                    <div class="Bodycorn">Bodycorn Dress</div>
+                                    <div class="dollars">$999.00</div>
+                                    <hr>
+                                    <div class="btn-main">
+                                        <div class="btnmain"><button class="btn-category">Add To Cart </button></div>
+                                        <div class="iconscategory">
+                                            <i class="fa-regular fa-heart"></i>
+                                            <i class="fa-solid fa-right-left"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item items-category">
+                                <div class="carousel-imagesss">
+
+                                    <img src="./Assets/img/marlon-alves-A0mSSCEVh9A-unsplash.jpg" alt="">
+                                    <div class="new">New</div>
+                                    <div class="hot">Hot</div>
+                                </div>
+                                <div class="text-main-owl">
+                                    <div class="Bodycorn">Bodycorn Dress</div>
+                                    <div class="dollars">$999.00</div>
+                                    <hr>
+                                    <div class="btn-main">
+                                        <div class="btnmain"><button class="btn-category">Add To Cart </button></div>
+                                        <div class="iconscategory">
+                                            <i class="fa-regular fa-heart"></i>
+                                            <i class="fa-solid fa-right-left"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item items-category">
+                                <div class="carousel-imagesss">
+
+                                    <img src="./Assets/img/uriel-soberanes-MxVkWPiJALs-unsplash.jpg" alt="">
+                                    <div class="new">New</div>
+                                    <div class="hot">Hot</div>
+                                </div>
+                                <div class="text-main-owl">
+                                    <div class="Bodycorn">Bodycorn Dress</div>
+                                    <div class="dollars">$999.00</div>
+                                    <hr>
+                                    <div class="btn-main">
+                                        <div class="btnmain"><button class="btn-category">Add To Cart </button></div>
+                                        <div class="iconscategory">
+                                            <i class="fa-regular fa-heart"></i>
+                                            <i class="fa-solid fa-right-left"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item items-category">
+                                <div class="carousel-imagesss">
+
+                                    <img src="./Assets/img/marlon-alves-A0mSSCEVh9A-unsplash.jpg" alt="">
+                                    <div class="new">New</div>
+                                    <div class="hot">Hot</div>
+                                </div>
+                                <div class="text-main-owl">
+                                    <div class="Bodycorn">Bodycorn Dress</div>
+                                    <div class="dollars">$999.00</div>
+                                    <hr>
+                                    <div class="btn-main">
+                                        <div class="btnmain"><button class="btn-category">Add To Cart </button></div>
+                                        <div class="iconscategory">
+                                            <i class="fa-regular fa-heart"></i>
+                                            <i class="fa-solid fa-right-left"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item items-category">
+                                <div class="carousel-imagesss">
+
+                                    <img src="./Assets/img/uriel-soberanes-MxVkWPiJALs-unsplash.jpg" alt="">
+                                    <div class="new">New</div>
+                                    <div class="hot">Hot</div>
+                                </div>
+                                <div class="text-main-owl">
+                                    <div class="Bodycorn">Bodycorn Dress</div>
+                                    <div class="dollars">$999.00</div>
+                                    <hr>
+                                    <div class="btn-main">
+                                        <div class="btnmain"><button class="btn-category">Add To Cart </button></div>
+                                        <div class="iconscategory">
+                                            <i class="fa-regular fa-heart"></i>
+                                            <i class="fa-solid fa-right-left"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ################################### Shops By Brands ########################## -->
+
+    <section class="ShopsbyBrand">
+        <div class="demand-section1 container1">
+            <div class="sub-demand-section">
+                <div class="require">
+                    <h2 class="require-txt">
+                        Shops By Brand
+                    </h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="main-owl-crausel">
+                <div class="owl-carousel-main">
+                    <div id="owl-carousel-4" class="owl-carousel owl-theme">
+                        <div class="item item1 items2">
+                            <img src="./Assets/img/Ford-Logo-1961.jpg" alt="">
+
+                        </div>
+                        <div class="item item1 items2">
+                            <img src="./Assets/img/palm-arcade-pallickachirakavala-kottayam-sg6suq17pw.jpg" alt="">
+
+                        </div>
+                        <div class="item item1 items2">
+                            <img src="./Assets/img/htc-letter-logo-design-polygon-260nw-1628181277.webp" alt="">
+                        </div>
+                        <div class="item item1 items2">
+                            <img src="./Assets/img/superbrands_2023_PR.jpg" alt="">
+                        </div>
+                        <div class="item item1 items2">
+                            <img src="./Assets/img/12171.png" alt="">
+                        </div>
+                        <div class="item item1 items2">
+                            <img src="./Assets/img/palm-arcade-pallickachirakavala-kottayam-sg6suq17pw.jpg" alt="">
+                        </div>
+                        <div class="item item1 items2">
+                            <img src="./Assets/img/htc-letter-logo-design-polygon-260nw-1628181277.webp" alt="">
+                        </div>
+                        <div class="item item1 items2">
+                            <img src="./Assets/img/Ford-Logo-1961.jpg" alt="">
+                        </div>
+                        <div class="item item1 items2">
+                            <img src="./Assets/img/12171.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ################################ Improved Gallery ###################### -->
+    <section class="demand-section Improved-Gallery">
+        <div class="demand-section1 container1">
+            <div class="sub-demand-section">
+                <div class="require">
+                    <h2 class="require-txt Improved">
+                        Improved Gallery Module
+                    </h2>
+                    <hr>
+                </div>
+                <div class="require-main-txt">
+                    <p class="required-txt improve-txt">Journal has been the best selling and Most loved OpenCart theme
+                        since first
+                        launch in 2013. Tried and Tested by over 20K people, Journal is the Best Opencart theme
+                        framework on the market today.
+                </div>
+            </div>
+
+        </div>
+        <div class="image-gallery container1">
+            <div class="gallery-box1">
+                <div class="box">
+                    <img src="./Assets/img/71D9ImsvEtL._UL1500_.jpg" alt="">
+                </div>
+                <div class="box box1">
+                    <img src="./Assets/img/41Gp-YKbeBL._AC_UL400_.jpg" alt="">
+                </div>
+                <div class="box box2">
+                    <img src="./Assets/img/istockphoto-525757763-612x612.jpg" alt="">
+                </div>
+            </div>
+            <div class="gallery-box2">
+                <div class="box box3">
+                    <img src="./Assets/img/Man-Wearing-Gray-Winter-Coat.jpg" alt="">
+                </div>
+                <div class="box box4">
+                    <img src="./Assets/img/green-parrot-23675697.jpg" alt="">
+                </div>
+                <div class="box box1">
+                    <img src="./Assets/img/41Gp-YKbeBL._AC_UL400_.jpg" alt="">
+                </div>
+            </div>
+            <div class="gallery-box3">
+                <div class="box">
+                    <img src="./Assets/img/71D9ImsvEtL._UL1500_.jpg" alt="">
+                </div>
+                <div class="box">
+                    <img src="./Assets/img/71D9ImsvEtL._UL1500_.jpg" alt="">
+                </div>
+                <div class="box box2">
+                    <img src="./Assets/img/istockphoto-525757763-612x612.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ################################## From Our Blog ########################## -->
+    <section class="demand-section Blog-section">
+        <div class="demand-section1 container1">
+            <div class="sub-demand-section">
+                <div class="require">
+                    <h2 class="require-txt">
+                        From Our Blog
+                    </h2>
+                    <hr>
+                </div>
+                <div class="require-main-txt">
+                    <p class="required-txt">Journal has been the best selling and Most loved OpenCart theme since first
+                        launch in 2013. Tried and Tested by over 20K people, Journal is the Best Opencart theme
+                        framework on the market today.
+                </div>
+            </div>
+            <div class="main-btn">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary actived2" onclick="showbutton2(event)">Latest
+                        Post</button>
+                    <button type="button" class="btn btn-secondary" onclick="showbutton2(event)">Most Read</button>
+                </div>
+            </div>
+        </div>
+        <div class="Blog Blog1 container1">
+            <!-- Json Data -->
+        </div>
+    </section>
+
+    <!-- ############################# FeedBack ############################# -->
+
+    <section class="feedback">
+        <div class="demand-section1 container1">
+            <div class="sub-demand-section">
+                <div class="require">
+                    <h2 class="require-txt">
+                        What are people saying about us
+                    </h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="Blog" id="comment">
+                <!-- json Data -->
+            </div>
+        </div>
+    </section>
+    <!-- ########################### Most View Section ###################################### -->
+    <section class="mostview">
+        <div class="mostviews container1">
+            <div class="Mostview-tag">
+                Most Viewed
+                <hr>
+            </div>
+            <div class="most-view-pic">
+                <div class="pic-tag">
+                    <div class="pic-tag1">
+                        <div class="pic">
+                            <img src="./Assets/img/232288-middle.png" alt="">
+                        </div>
+                        <div class="pic-icons">
+                            <div class="pic-intro">
+                                <div class="main-intro">
+                                    Women's Maria Pump
+                                </div>
+                                <div class="pic-dollar">$425.00</div>
+                            </div>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="pic-tag">
+                    <div class="pic-tag1 pic-tag2">
+                        <div class="pic">
+                            <img src="./Assets/img/232288-middle.png" alt="">
+                        </div>
+                        <div class="pic-icons">
+                            <div class="pic-intro">
+                                <div class="main-intro">
+                                    Women's Maria Pump
+                                </div>
+                                <div class="pic-dollar">$425.00</div>
+                            </div>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="pic-tag">
+                    <div class="pic-tag1 pic-tag3">
+                        <div class="pic">
+                            <img src="./Assets/img/85254-headset-airpods-apple-headphones-plus-iphone-earbuds.png"
+                                alt="">
+                        </div>
+                        <div class="pic-icons">
+                            <div class="pic-intro">
+                                <div class="main-intro">
+                                    Women's Maria Pump
+                                </div>
+                                <div class="pic-dollar">$425.00</div>
+                            </div>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ###################################### social-media ############################ -->
+    <section class="social-media">
+        <div class="social-medias">
+            <div class="sub-social-media container1">
+                <div class="social-media-icons">
+                    <div class="social-media-icons1"><i class="fa-brands fa-facebook"></i></div>
+                    <div class="social-media-icons1"><i class="fa-brands fa-twitter"></i></div>
+                    <div class="social-media-icons1"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="social-media-icons1"><i class="fa-brands fa-square-youtube"></i></div>
+                    <div class="social-media-icons1"><i class="fa-brands fa-square-whatsapp"></i></div>
+                    <div class="social-media-icons1"><i class="fa-brands fa-linkedin"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ############################ Contact Section ############################### -->
+    <section class="contact-section">
+        <div class="contact-section1">
+            <div class="sub-contact-section container1">
+                <div class="contact-category">
+                    <div class="contact-category1">
+                        <div class="main-contact1">
+                            About Us
+                            <hr>
+                        </div>
+                        <div class="main-contact">
+                            About Us
+                        </div>
+                        <div class="main-contact">
+                            Delivery
+                        </div>
+                        <div class="main-contact">
+                            Privacy Policy
+                        </div>
+                        <div class="main-contact">
+                            Term & Condition
+                        </div>
+                        <div class="main-contact">
+                            Custom Links
+                        </div>
+                    </div>
+                    <div class="contact-category1">
+                        <div class="main-contact1">
+                            About Us
+                            <hr>
+                        </div>
+                        <div class="main-contact">
+                            About Us
+                        </div>
+                        <div class="main-contact">
+                            Delivery
+                        </div>
+                        <div class="main-contact">
+                            Privacy Policy
+                        </div>
+                        <div class="main-contact">
+                            Term & Condition
+                        </div>
+                        <div class="main-contact">
+                            Custom Links
+                        </div>
+                    </div>
+                    <div class="contact-category1">
+                        <div class="main-contact1">
+                            About Us
+                            <hr>
+                        </div>
+                        <div class="main-contact">
+                            About Us
+                        </div>
+                        <div class="main-contact">
+                            Delivery
+                        </div>
+                        <div class="main-contact">
+                            Privacy Policy
+                        </div>
+                        <div class="main-contact">
+                            Term & Condition
+                        </div>
+                        <div class="main-contact">
+                            Custom Links
+                        </div>
+                    </div>
+                    <div class="contact-category1 input-contact">
+                        <div class="contact-categoryies">
+                            <div class="main-contact1 contact-input">
+                                News Letter
+                                <hr>
+                            </div>
+                            <div class="main-input-contact">
+                                <p class="main-input-contact-para">
+                                    stay up to date with news and promotions by signing up for our newsletter.
+                                </p>
+                                <input type="text" placeholder="Your Email"><button class="btn-category send"><i
+                                        class="fa-solid fa-envelope"></i>Send</button><br>
+                                <input type="checkbox" name="" id="">
+                                <p class="privacy">I have Read all the <a href="">privacy policy</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ###################################### CopyRight ###################################### -->
+    <section class="copyright-section">
+        <div class="copyright">
+            <div class="sub-copy-right container1">
+                <div class="main-copyright">
+                    Copyright @ 2014,Your Store, All Rights Reversed
+                </div>
+                <div class="copyright-icons">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-amex"></i>
+                    <i class="fa-brands fa-cc-discover"></i>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                    <i class="fa-brands fa-cc-stripe"></i>
+                    <i class="fa-solid fa-arrow-up-long last-icons" title="move top" id="icon-scroll"
+                        onclick="scrollToTop()"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ########################## Jquery Link ###################### -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <!-- ###################### Bootstrap Js Link ########################## -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+        </script>
+    <!-- ########################### Owl Crausel Js Link ###################### -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <!-- ############################### owl-carousel ###################################### -->
+    <script>
+        // ############################### Feature Section ########################
+
+        $('#owl-carousel-2').owlCarousel({
+            loop: true,
+            margin: 10,
+            // autoplay: false,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                480: {
+                    items: 2
+                },
+                768: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        });
+        // ############################## Category- Section ######################
+
+        $('#owl-carousel-3').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                400: {
+                    items: 1
+                },
+                500: {
+                    items: 2
+                },
+                599: {
+                    items: 1
+                },
+                700: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                },
+                1350: {
+                    items: 4
+                }
+            }
+        });
+
+        $('#owl-carousel-4').owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                400: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                700: {
+                    items: 4
+                },
+                1000: {
+                    items: 9
+                }
+            }
+        });
+
+        // ########################### scroll-top ####################
+        window.addEventListener('scroll', () => {
+            let height = window.scrollY;
+            if (height < 500) {
+                document.getElementById("icon-scroll").style.display = 'none';
+            } else {
+                document.getElementById("icon-scroll").style.display = 'block';
+            }
+        }, 10000)
+        function scrollToTop() {
+            window.scrollTo(0, 0);
+        }
+    </script>
+
+    <script src="Assets/Js/login.js"></script>
+    <script src="Assets/Js/Buy.js"></script>
+    <script src="Assets/Js/Featured_products.js"></script>
+    <script src="Assets/Js/Blog.js"></script>
+    <script src="Assets/Js/Feedback.js"></script>
+    <script src="Assets/Js/modal.js"></script>
+    <!-- <script src="Assets/Js/wishlist.js"></script> -->
+
+</body>
+
+</html>
